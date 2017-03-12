@@ -12,9 +12,7 @@ gretel-test: Flu-A7
 
 ## Original Data
 
-    cat data_09d1e503-3e17-455c-bd47-dbaea3f96b3e.tar.* > data_09d1e503-3e17-455c-bd47-dbaea3f96b3e.tar
-    tar xvf data_09d1e503-3e17-455c-bd47-dbaea3f96b3e.tar
-    tar xvf result_09d1e503-3e17-455c-bd47-dbaea3f96b3e.tar
+Original data and results can be [downloaded from Google Drive](https://drive.google.com/open?id=0B4t7QqgmvVLHSzlpbXVmMUlmVWs)
 
 ## Results
 

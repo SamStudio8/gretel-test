@@ -12,8 +12,7 @@ gretel-test: DHFR
 
 ## Original Data
 
-    tar xvf data_fbc8eada-a2a7-4ede-b1b5-757e3640fa93.tar
-    tar xvf result_fbc8eada-a2a7-4ede-b1b5-757e3640fa93.tar
+Original results can be [downloaded from Google Drive](https://drive.google.com/open?id=0B4t7QqgmvVLHSzlpbXVmMUlmVWs)
 
 ## Results
 

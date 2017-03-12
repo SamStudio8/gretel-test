@@ -7,15 +7,12 @@
 ## Original Data
 
 ### Data
-Data tar includes the trees, haplotypes and masters.
-Full data is available on request due to its storage impracticality (>300 GB)... But, you can generate your own data using our protocol with `chitin`!
-
-    tar xvf 710dd289-621e-456c-9274-e080b4a5b5fd.tar
+Full data is unfortunately only available on request due to its storage impracticality (>300 GB)... But, you can generate your own data using our protocol with `chitin`!
+We do however provide the data tar that includes the trees, haplotypes and masters, [on our Google Drive](https://drive.google.com/open?id=0B4t7QqgmvVLHSzlpbXVmMUlmVWs).
 
 ### Results
 
-    cat result_710dd289-621e-456c-9274-e080b4a5b5fd.tar.* > result_710dd289-621e-456c-9274-e080b4a5b5fd.tar
-    tar xvf result_710dd289-621e-456c-9274-e080b4a5b5fd.tar
+Original results can be [downloaded from Google Drive](https://drive.google.com/open?id=0B4t7QqgmvVLHSzlpbXVmMUlmVWs).
 
 ## Results
 ### Hamming
