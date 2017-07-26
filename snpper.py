@@ -4,15 +4,20 @@ import sys
 
 import numpy as np
 import pysam
+import argparse
 
-bam = pysam.AlignmentFile(sys.argv[1])
-counts = np.array(bam.count_coverage(reference=sys.argv[2], start=0, end=int(sys.argv[3]), quality_threshold=0, read_callback='nofilter'))
+parser = argparse.ArgumentParser('Aggressively call for variants and generate a VCF')
+parser.add_argument('-b', help='bam file', required=True)
+parser.add_argument('-r', help='reference sequence (contig) to match', required=True)
+parser.add_argument('-s', help='start', type=int, default=0)
+parser.add_argument('-e', help='end', type=int)
+parser.add_argument('-d', help='minimum depth to call (default = ', type=int, default=0)
+args = parser.parse_args()
 
-COUNT_SENSITIVITY = 0
-try:
-    COUNT_SENSITIVITY = int(sys.argv[4])
-except IndexError:
-    pass
+bam = pysam.AlignmentFile(args.b)
+counts = np.array(bam.count_coverage(reference=args.r, start=args.s, end=args.e, quality_threshold=0, read_callback='nofilter'))
+
+COUNT_SENSITIVITY = args.d
 
 vcf_h = [
     "##fileformat=VCFv4.2",
@@ -35,6 +40,6 @@ for i, s in enumerate(sites):
 
 
 for r in vcf_h:
-    print r
+    print(r)
 for r in vcf:
-    print "\t".join([str(s) for s in r])
+    print("\t".join([str(s) for s in r]))
