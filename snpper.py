@@ -11,7 +11,7 @@ parser.add_argument('-b', help='bam file', required=True)
 parser.add_argument('-r', help='reference sequence (contig) to match', required=True)
 parser.add_argument('-s', help='start', type=int, default=0)
 parser.add_argument('-e', help='end', type=int)
-parser.add_argument('-d', help='minimum depth to call (default = ', type=int, default=0)
+parser.add_argument('-d', help='minimum depth to call (default = 0)', type=int, default=0)
 args = parser.parse_args()
 
 bam = pysam.AlignmentFile(args.b)
@@ -28,8 +28,8 @@ sites = (counts > COUNT_SENSITIVITY).sum(axis=0)
 for i, s in enumerate(sites):
     if s > 1:
         vcf.append([
-            sys.argv[2],
-            i+1,
+            args.r,
+            i+1+args.s,
             '.',
             'G',
             'A,T,C',
