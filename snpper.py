@@ -33,6 +33,7 @@ vcf = []
 
 sites = (counts > COUNT_SENSITIVITY).sum(axis=0)
 for i, s in enumerate(sites):
+    sys.stderr.write("{}\t{}\t{}\n".format(i, s, i+1+args.s))
     if s > 1:
         vcf.append([
             args.r,
