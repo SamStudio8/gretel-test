@@ -12,7 +12,7 @@ gretel-test: DHFR
 
 ## Original Data
 
-Original results can be [downloaded from Google Drive](https://drive.google.com/open?id=0B4t7QqgmvVLHSzlpbXVmMUlmVWs)
+Original results can be [downloaded from Google Drive](https://drive.google.com/open?id=0B4t7QqgmvVLHSzlpbXVmMUlmVWs).
 
 ## Results
 

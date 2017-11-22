@@ -12,7 +12,7 @@ gretel-test: Flu-A7
 
 ## Original Data
 
-Original data and results can be [downloaded from Google Drive](https://drive.google.com/open?id=0B4t7QqgmvVLHSzlpbXVmMUlmVWs)
+Original data and results can be [downloaded from Google Drive](https://drive.google.com/open?id=0B4t7QqgmvVLHSzlpbXVmMUlmVWs).
 
 ## Results
 
