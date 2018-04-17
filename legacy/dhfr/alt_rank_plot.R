@@ -1,5 +1,7 @@
 library("ggplot2");
-d <- read.table(TABLE_P, header=T);
+#d <- read.table(TABLE_P, header=T);
+d <- read.table("fbc_hamming_wpd_wmeta.txt", header=T);
+
 
 #d <- d[d$cov == 10,]
 
@@ -14,7 +16,7 @@ d$in_hname_o = factor(d$in_hname, levels=c('BC070280', 'XR_634888', 'AK232978', 
 ho_labels <- c(BC070280 = "BC070280 (99.8%)", XR_634888 = "XR_634888 (97.3%)", AK232978="AK232978 (90.1%)", M19237="M19237 (83.5%)", XM_014960529="XM_014960529 (78.7%)")
 
 #d$rank_w_pc <- (d$rank_w/d$n_outhaps*100)
-#d$rank_w <- (d$rank_w/d$n_outhaps)
+d$rank_w <- (d$rank_w/(d$n_outhaps-1))
 p <- ggplot(d, aes(recovery, rank_w, colour=factor(cov))) + facet_grid(readsize~in_hname_o, labeller=labeller(in_hname_o = ho_labels, readsize=read_l_labels)) + scale_y_reverse(lim=c(1.01,-0.01)) + scale_x_reverse( lim=c(101,-1)) + theme_grey(base_size=30) + geom_point(size=2.5)
 #p <- p + theme(panel.grid.major.x=element_line(color="gray"))
 #p <- p + theme(panel.grid.major.y=element_line(color="gray"))
