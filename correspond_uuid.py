@@ -1,6 +1,6 @@
-"""Given a manifest file A, and a file B containing additional information to melt onto B,
-produce a file containing each line of B, prepended by the associated line in A that shares
-the same UUID"""
+"""Given a manifest file A, and a file B containing additional information to melt onto A,
+produce a file containing each line of B, with the associated line in A that shares
+the same UUID appended"""
 import os
 import sys
 
