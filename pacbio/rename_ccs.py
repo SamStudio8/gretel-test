@@ -19,4 +19,4 @@ for line in ls_fh:
 
 for name, seq, qual in fa_fh:
     if count_map.get(name, 1) >= threshold:
-        print('>%s_%d\n%s' % (name, count_map.get(name, 1), seq))
+        print('>G%s/2019_%s_%d\n%s' % (sys.argv[1].split(".")[0], name, count_map.get(name, 1), seq.replace("_", "")))
