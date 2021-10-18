@@ -1,2 +1,2 @@
 # gretel-test
-A repository of testing examples for [Hansel](https://github.com/SamStudio8/hansel) and [Gretel](https://github.com/SamStudio8/gretel): a metagenomic haplotyping framework.
+An archive repository of old testing examples for [Hansel](https://github.com/SamStudio8/hansel) and [Gretel](https://github.com/SamStudio8/gretel): a metagenomic haplotyping framework. This repository contains [test data pertaining to work explored in my PhD thesis](https://pure.aber.ac.uk/portal/en/theses/computational-recovery-of-enzyme-haplotypes-from-a-metagenome(cfc1d884-cc17-439f-be6e-c3ab6d79ee1d).html). Results and old scripts may no longer be valid as this repository has not been updated with newer versions of Hansel and Gretel.
